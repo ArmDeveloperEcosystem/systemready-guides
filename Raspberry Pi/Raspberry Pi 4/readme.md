@@ -20,5 +20,7 @@ What is needed:
    it into the board.
 
 5) The board is now ready to boot SystemReady compatible operating systems from
-   SD Card, or USB
+   a SD Card or USB. Note: The SD/USB created in this guide must remain, the OS
+   installer must be on a *second* drive, and the OS then be installed onto a
+   *third* drive.
 
