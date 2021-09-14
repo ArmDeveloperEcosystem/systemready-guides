@@ -123,16 +123,13 @@ specifications.
     <tr>
         <td><strong>Security extension</strong></td>
         <td>N/A</td>
-        <td colspan="3" style="text-align: center;">Can support UEFI SecureBoot and secure firmware update through <br>
-        UEFI Capsule Service across (BBSR)</td>
+        <td colspan="3" style="text-align: center;">Can support UEFI SecureBoot and secure firmware update through UEFI Capsule Service across (BBSR)</td>
     </tr>
     <tr>
         <td><strong>Operating system or hypervisor</strong></td>
         <td>Linux</td>
         <td>Linux</td>
-        <td>Generic, off-the-shelf with<br>
-        exceptions, RAS and<br>
-        virtualization.</td>
+        <td>Generic, off-the-shelf with exceptions, RAS and virtualization.</td>
         <td>Generic, off-the-shelf</td>
     </tr>
   </tbody>
