@@ -140,6 +140,7 @@ specifications.
 ## SystemReady LS
 -
 ## SystemReady IR
+- [Raspberry Pi 4 Model B](Raspberry%20Pi/../Raspberry%20Pi/Raspberry%20Pi%204%20Model%20B/readme.md)
 - [NXP i.MX 8M Mini EVK](NXP/i.mx_8m_mini_EVK/readme.md)
 ## SystemReady ES
 - [Raspberry Pi 4 Model B](Raspberry%20Pi/../Raspberry%20Pi/Raspberry%20Pi%204%20Model%20B/readme.md)

@@ -1,6 +1,7 @@
 # Raspberry Pi 4 Model B
 
-![SystemReady-ES Certified](../../_assets/systemready_icons/es.png)
+![SystemReady ES Certified](../../_assets/systemready_icons/es.png)
+![SystemReady IR Certified](../../_assets/systemready_icons/ir.png)
 
 What is needed:
 - [Raspberry Pi 4 Model B](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
@@ -24,3 +25,20 @@ What is needed:
    installer must be on a *second* drive, and the OS then be installed onto a
    *third* drive.
 
+## Selecting between SystemReady ES and SystemReady IR
+The Raspberry Pi is certified for both SystemReady ES (ACPI) and SystemReady IR
+(Devicetree). You can toggle which is used in the UEFI menu by following these
+steps:
+
+1. Enter the UEFI menu by pressing `Esc` during boot
+
+   ![Boot screen](../images/boot.png)
+2. In UEFI menu navigate to `Device Manager` > `Raspberry Pi Configuration` > `Advanced Configuration`
+
+   ![Menu](../images/menu.png)
+3. The `System Table Selection` option will allow you to pick how UEFI present
+   the Raspberry Pi hardware to the OS:
+      - ACPI - SystemReady ES
+      - Devicetree - SystemReady IR
+
+   ![System tables](../images/table.png)
