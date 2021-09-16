@@ -1,4 +1,4 @@
-# Arm SystemReady Guides
+# SystemReady Certified Devices Guide
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 This repository hosts a series of guides on how to setup devices that are
