@@ -52,7 +52,7 @@ export DISK=/dev/sdd
 
 Next ensure you have a fresh start by filling the SD card with zeros:
 ```
-$ sudo dd bs=4M if=/dev/zero of=$DISK
+$ sudo dd bs=4M if=/dev/zero of=$DISK oflag=sync
 ```
 
 ## Creating the partition table
@@ -139,7 +139,7 @@ $ sudo mkfs -t vfat "${DISK}2"
 ## Copying the firmware to the micro SD card
 Finally, copy over the firmware you built previously
 ```
-$ sudo dd if=../out/bin/u-boot/idbloader.img conv=notrunc seek=64    of=$DISK
-$ sudo dd if=../out/bin/u-boot/u-boot.itb    conv=notrunc seek=16384 of=$DISK
+$ sudo dd if=../out/bin/u-boot/idbloader.img seek=64    of=$DISK
+$ sudo dd if=../out/bin/u-boot/u-boot.itb    seek=16384 of=$DISK
 $ sync
 ```
