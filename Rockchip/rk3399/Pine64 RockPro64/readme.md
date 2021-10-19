@@ -17,6 +17,7 @@ Certification Errata:
 - Access to a linux (virtual) machine
 
 # Building the firmware
+*(As per: https://gitlab.arm.com/systemready/firmware-build/rk3399-manifest/-/blob/rockpro64-21.09/README.md)*
 
 Firstly, ensure `repo` is installed on your system: https://source.android.com/setup/build/downloading
 
