@@ -137,17 +137,37 @@ specifications.
 
 ---
 # Guides
+[SystemReady ES - Test and Certification Guide](https://developer.arm.com/documentation/102529/0100)
+\- Explains how to test a platforms compliance with SystemReady ES
+
+[SystemReady IR - IoT integration, test, and certification](https://developer.arm.com/documentation/DUI1101/a/?lang=en)
+\- Explains how to test a platforms compliance with SystemReady IR
+
+[Deploying Yocto on SystemReady IR compliant hardware](https://developer.arm.com/documentation/DUI1102/0100)
+\- Explains the SystemReady IR boot process, and how to build a [yocto](https://www.yoctoproject.org/) based linux
+system that follows this boot process.
+
 ## SystemReady LS
+You can find a full list of SystemReady LS certified device: [here](https://www.arm.com/why-arm/architecture/systems/systemready-certification-program/ls)
+
 -
+
 ## SystemReady IR
+You can find a full list of SystemReady IR certified device: [here](https://www.arm.com/why-arm/architecture/systems/systemready-certification-program/ir)
+
 - [Pine64 RockPro64](Rockchip/rk3399/Pine64%20RockPro64/readme.md)
 - [Raspberry Pi 4 Model B](Raspberry%20Pi/../Raspberry%20Pi/Raspberry%20Pi%204%20Model%20B/readme.md)
 - [Raspberry Pi 400](Raspberry%20Pi/Raspberry%20Pi%20400/readme.md)
 - [NXP i.MX 8M Mini EVK](NXP/i.mx_8m_mini_EVK/readme.md)
+
 ## SystemReady ES
+You can find a full list of SystemReady ES certified device: [here](https://www.arm.com/why-arm/architecture/systems/systemready-certification-program/es)
 - [Raspberry Pi 4 Model B](Raspberry%20Pi/../Raspberry%20Pi/Raspberry%20Pi%204%20Model%20B/readme.md)
 - [Raspberry Pi 400](Raspberry%20Pi/Raspberry%20Pi%20400/readme.md)
+
 ## SystemReady SR
+You can find a full list of SystemReady SR certified device: [here](https://www.arm.com/why-arm/architecture/systems/systemready-certification-program/sr)
+
 -
 
 ---
