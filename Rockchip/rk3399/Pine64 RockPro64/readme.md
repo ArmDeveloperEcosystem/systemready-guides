@@ -30,7 +30,7 @@ $ cd rockpro64_firmware
 Clone the repositories
 ```
 $ repo init -u https://gitlab.arm.com/systemready/firmware-build/rk3399-manifest -m RockPro64.xml -b refs/tags/rockpro64-21.09
-$ repo sync -j4 --no-clone-bundle#
+$ repo sync -j4 --no-clone-bundle
 $ cd build
 ```
 
