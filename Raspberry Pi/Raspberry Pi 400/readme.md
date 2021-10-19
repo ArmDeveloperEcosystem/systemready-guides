@@ -1,9 +1,17 @@
 # Raspberry Pi 400
 
-![SystemReady-ES Certified](../../_assets/systemready_icons/es.png)
-![SystemReady-ES Certified](../../_assets/systemready_icons/ir.png)
+![SystemReady ES Certified](../../_assets/systemready_icons/es.png)
+![SystemReady IR Certified](../../_assets/systemready_icons/ir.png)
 
-What is needed:
+Certification:
+[SystemReady ES](https://armkeil.blob.core.windows.net/developer/Files/pdf/certificate-list/arm-systemready-es-certification-raspberry-pi.pdf),
+[SystemReady IR](https://armkeil.blob.core.windows.net/developer/Files/pdf/certificate-list/arm-systemready-ir-certification-raspberry-pi.pdf)
+
+Certification Errata:
+[SystemReady IR](https://www.arm.com/-/media/Files/pdf/certificate-list/arm-systemready-errata-document-raspberry-pi-400-461)
+
+
+**What is needed:**
 - [Raspberry Pi 4 400](https://www.raspberrypi.org/products/raspberry-pi-400-unit/)
 - USB-C power supply
 - MicroSD card or USB drive if using [USB bootloader](https://www.raspberrypi.org/documentation/hardware/raspberrypi/bootmodes/msd.md) (at least 16MB)

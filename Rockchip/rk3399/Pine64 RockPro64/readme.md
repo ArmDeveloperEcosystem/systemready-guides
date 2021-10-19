@@ -2,7 +2,14 @@
 
 ![SystemReady-IR Certified](/_assets/systemready_icons/ir.png)
 
-What is needed:
+Certification:
+[SystemReady IR](https://armkeil.blob.core.windows.net/developer/Files/pdf/certificate-list/arm-systemready-ir-certification-pine64.pdf)
+
+Certification Errata:
+[SystemReady IR](https://www.arm.com/-/media/Files/pdf/certificate-list/arm-systemready-errata-document-pine64-rockpro64-412)
+
+
+**What is needed:**
 - [PINE64 ROCKPro64](https://www.pine64.org/rockpro64/)
 - Power Supply
 - MicroSD card - minimum of 2GiB

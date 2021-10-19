@@ -2,7 +2,14 @@
 
 ![SystemReady-IR Certified](../../_assets/systemready_icons/ir.png)
 
-What is needed:
+Certification:
+[SystemReady IR](https://armkeil.blob.core.windows.net/developer/Files/pdf/certificate-list/arm-systemready-ir-certification-nxp-4.pdf)
+
+Certification Errata:
+[SystemReady IR](https://www.arm.com/-/media/Files/pdf/certificate-list/arm-systemready-ir-errata-document-nxp-imx8m-mini-evk)
+
+
+**What is needed:**
 -	[NXP i.MX 8M Mini EVK](https://www.nxp.com/design/development-boards/i-mx-evaluation-and-development-boards/evaluation-kit-for-the-i-mx-8m-mini-applications-processor:8MMINILPD4-EVK)
 -	USB-C power supply (comes with EVK kit)
 -	USB-A -> USB-C cable for uploading to eMMC (comes with EVK)
