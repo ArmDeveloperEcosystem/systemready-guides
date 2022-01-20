@@ -5,7 +5,7 @@
 | :------------: |:---------------:| :-----:|
 | Toy Brick      | TB-RK3399proD.xml | RK3399 Pro |
 
-** What is needed:**
+**What is needed:**
 - ToyBrick RK3399 ProD AI Development Kit
 - Power supply
 - USB type-C connector to interface with host machine
@@ -50,7 +50,7 @@ If you dont have an aarch64-linux-gnu cross compiler already installed on your h
 * Option 1: Package install the cross-compilers on the host machine OS.
 * Option 2: Use the toolchain installer thats provided by the makefile
 
-###Option 1: PREFERRED
+### Option 1: PREFERRED
 
 ```
 sudo apt-get install gcc-aarch64-linux-gnu arm-none-eabi-gcc
@@ -71,7 +71,7 @@ $ echo $AARCH64_PATH
 /usr
 ```
 
-###Option 2: ALTERNATIVE (skip this if using option 1)
+### Option 2: ALTERNATIVE (skip this if using option 1)
 
 ```
 cd build/
@@ -96,14 +96,14 @@ ls -ltr ../out/bin/u-boot/
 
 
 
-## 5. Building the FW binaries
+## 5. Building the Loader binaries
 ```
 cd ../rkbin
 ./tools/boot_merger  ./RKBOOT/RK3399PROMINIALL.ini
 ```
 The above command will generate the miniloader file: eg. `rk3399pro_loader_v1.25.126.bin`
 
-## 6. Flashing the FW binaries and U-Boot
+## 6. Flashing the Loader binaries and Firmware
 
 ### 6-a: Preparing the host-machine
 To succesgfully detect and flash the board the following packages are required to be installed on the host machine
