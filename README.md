@@ -155,6 +155,7 @@ You can find a full list of SystemReady LS certified device: [here](https://www.
 ## SystemReady IR
 You can find a full list of SystemReady IR certified device: [here](https://www.arm.com/why-arm/architecture/systems/systemready-certification-program/ir)
 
+- [ToyBrick RK3399proD](Rockchip/rk3399/TB_RK3399proD/readme.md)
 - [Pine64 RockPro64](Rockchip/rk3399/Pine64%20RockPro64/readme.md)
 - [Raspberry Pi 4 Model B](Raspberry%20Pi/../Raspberry%20Pi/Raspberry%20Pi%204%20Model%20B/readme.md)
 - [Raspberry Pi 400](Raspberry%20Pi/Raspberry%20Pi%20400/readme.md)
