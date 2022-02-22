@@ -57,8 +57,9 @@ If you dont have an aarch64-linux-gnu cross compiler already installed on your h
 ## Option 1: PREFERRED
 
 ```
-sudo apt-get install gcc-aarch64-linux-gnu arm-none-eabi-gcc
+sudo apt-get install gcc-aarch64-linux-gnu gcc-arm-none-eabi
 which aarch64-linux-gnu-gcc
+which arm-linux-gnu-gcc
 ```
 Copy the path reported by the above command (excluding the tailing `bin/aarch64-linux-gnu-gcc`) and paste it after the command below:
 
