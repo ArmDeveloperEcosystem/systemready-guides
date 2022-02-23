@@ -138,13 +138,21 @@ sudo ./tools/rkdeveloptool rd
 ```
 
 
+
 The TB_RK3399ProD board should restart and boot into u-boot. If there is a pre-installed distro available on the on-board flash then the system will boot into it.
 
 
-# Booting standard distros on external storage (uSDCard/USB)
-If you have a bootable storage device with a Linux distro installed, connected to USB or installed in MMCslot the board may not automatically boot into it. 
+# Booting standard distros on external storage (USB)
 
-You have 2 options to boot into is: 
+If you have a bootable storage device with a Linux distro installed, connected to USB the board may not automatically boot into it. 
+
+`
+Note: 
+HDMI/DP display is currently not supported in this firmware image. So to interact with the board ensure you are connected via UART over a micro-USB cable.
+The default baudrate for the board is 1500000 (1.5M) 
+`
+
+You have 2 options to boot force USB boot: 
 
 * Option1: Manual boot device selection: 
    1. Interrupt u-boot by hitting any key
@@ -157,6 +165,17 @@ You have 2 options to boot into is:
 
 This should start booting the linux kernel on the external uSDCard/USB drive. 
 
+```
+IMPORTANT: 
 
+The ToyBrick RK3399ProD has a default UART baudrate of 1.5M (1500000). 
+This might be changed by the external Distro as it boots.
+
+Once you select the boot device in u-boot and it starts booting the standard distro it might look like it hangs.
+
+This would indicate that the baudrate has changed and you will have to kill the terminal and re-connect via UART 
+with baudate of 115200 to see the login prompt.
+
+```
 
 
