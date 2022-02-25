@@ -57,8 +57,9 @@ If you dont have an aarch64-linux-gnu cross compiler already installed on your h
 ## Option 1: PREFERRED
 
 ```
-sudo apt-get install gcc-aarch64-linux-gnu arm-none-eabi-gcc
+sudo apt-get install gcc-aarch64-linux-gnu gcc-arm-none-eabi
 which aarch64-linux-gnu-gcc
+which arm-linux-gnu-gcc
 ```
 Copy the path reported by the above command (excluding the tailing `bin/aarch64-linux-gnu-gcc`) and paste it after the command below:
 
@@ -136,8 +137,45 @@ sudo ./tools/rkdeveloptool wl 0x4000 ../out/bin/u-boot/u-boot.itb && sleep 2
 sudo ./tools/rkdeveloptool rd
 ```
 
-The TB_RK3399ProD board should restart and boot into U-boot
 
-If you have a bootable storage device with a UEFI compatible OS install connected to USB or installed in the MMC slot, the board should start booting the OS.
+
+The TB_RK3399ProD board should restart and boot into u-boot. If there is a pre-installed distro available on the on-board flash then the system will boot into it.
+
+
+# Booting standard distros on external storage (USB)
+
+If you have a bootable storage device with a Linux distro installed, connected to USB the board may not automatically boot into it. 
+
+`
+Note: 
+HDMI/DP display is currently not supported in this firmware image. So to interact with the board ensure you are connected via UART over a micro-USB cable.
+The default baudrate for the board is 1500000 (1.5M) 
+`
+
+You have 2 options to boot force USB boot: 
+
+* Option1: Manual boot device selection: 
+   1. Interrupt u-boot by hitting any key
+   2. Run the command: 
+   `run usb_boot`
+
+* Option2: Update U-boot env variables 
+   1. Interrupt u-boot by hitting any key
+   2. Update the *boot* environment variables to either change the boot order or override the "boot" variable to "usb_boot"
+
+This should start booting the linux kernel on the external uSDCard/USB drive. 
+
+```
+IMPORTANT: 
+
+The ToyBrick RK3399ProD has a default UART baudrate of 1.5M (1500000). 
+This might be changed by the external Distro as it boots.
+
+Once you select the boot device in u-boot and it starts booting the standard distro it might look like it hangs.
+
+This would indicate that the baudrate has changed and you will have to kill the terminal and re-connect via UART 
+with baudate of 115200 to see the login prompt.
+
+```
 
 
